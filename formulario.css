@@ -1,0 +1,207 @@
+body{
+    background-color: rgb(31, 236, 123);
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: lightpink;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+    border: 5px, solid, magenta;
+    margin:20px;   
+}
+
+header a{
+    font-size: 5em;
+    color: darkviolet
+}
+
+header nav ul{
+    display: flex;
+    gap: 2.5em;
+}
+
+header nav ul li{
+    display: flex
+}
+
+header nav ul li a{
+    color: darkviolet;
+    font-size: 22px;
+}
+
+footer{
+    background-color: rgb(125, 92, 241);
+    width: 100%;
+    padding:0px;
+}
+
+.footer-details{
+    padding: 15px;
+    margin: 2px 2px 2px 2px;
+    font-size: 25px;
+    }
+
+a i.fa-regular.fa-moon.fixed{
+    color: yellow;
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-size: 2em;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: darkviolet;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+a i.fa-regular.fa-moon.fixed{
+    color: yellow;
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-size: 2em;
+    }
+
+
+/*estilos de pantallas pequeñas*/
+@media(max-width: 768px){
+    header{
+        background-color: rgb(212, 48, 204);}
+        .checkbtn{
+            display: block;}
+
+        ul{
+            display: none;}
+
+        header ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background:#2c3e50;
+            text-align: center;
+            top: 80px;
+            left: 100%;
+            transition: all 0.5s;}
+
+        #check:checked ~ ul{
+            left: 0%;
+            display: block;}
+
+        header nav ul li{
+            display: block;
+            margin: 50px o;
+            line-height: 30px;}
+
+        header nav ul li a{
+            font-size: 20px; }
+
+        #check:checked ~ .checkbtn{
+            color: #2c3e50}
+}
+
+.titulo_seccion {
+    position: relative;
+    font-size: 40px;
+    color: #003750;
+    text-align: center;
+}
+.container {
+    max-width: 50%; /* Define el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0%; /* Agrega un poco de espacio alrededor del formulario */
+    border: 4px solid rgb(216, 73, 221); /* Agrega un borde al contenedor */
+    border-radius: 4px; /* Agrega bordes redondeados al contenedor */
+}
+.form-group {
+    margin-bottom: 15px; /* Espacio entre cada input */
+}
+label {
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%; /* Define el ancho máximo del input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+button {
+    font-size: 20px;
+    background-color: #2e5d01;
+    color: #fff;
+    border-radius: 15px;
+    height: 55px;
+    text-align: center;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    width: 300px; /* Ajusta el ancho del formulario */
+    margin: 100px auto; /* Centra el formulario en la página */
+    padding: 20px;
+    background-color: rgba(206, 98, 228, 0.5); /* Fondo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea{
+    width: 90%; /* Hace que los campos ocupen todo el ancho del contenedor */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
